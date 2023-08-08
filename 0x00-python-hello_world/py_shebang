@@ -1,2 +1,2 @@
 #!/bin/bash 
-sed '1 i #!/bin/python3' -i $(ls -t | head -1)
+sed '1 i #!/usr/bin/python3' -i $(ls -t | head -1)
