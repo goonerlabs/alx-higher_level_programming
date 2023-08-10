@@ -7,13 +7,13 @@ def print_args():
     length = len(args) - 1
 
     if length == 0:
-        print(f"{length} arguments.")
+        print("{} arguments.".format(length))
     elif length == 1:
-        print(f"{length} argument:")
+        print("{} argument:".format(length))
     else:
-        print(f"{length} arguments:")
-    for i in range(1, length  + 1):
-        print(f"{i}: {args[i]}")
+        print("{} arguments:" .format(length))
+    for i in range(1, length + 1):
+        print("{}: {}".foramt(i, args[i]))
 
 
 if __name__ == "__main__":
