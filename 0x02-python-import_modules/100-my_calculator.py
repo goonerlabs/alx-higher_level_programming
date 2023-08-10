@@ -16,11 +16,12 @@ def calc():
     operator = av[2]
     b = int(av[3])
 
-    if operator  not in funcs.keys():
+    if operator not in funcs.keys():
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
     print("{} {} {} = {}".format(a, operator, b, funcs[operator](a, b)))
+
 
 if __name__ == "__main__":
     calc()
