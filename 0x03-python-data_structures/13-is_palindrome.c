@@ -9,16 +9,16 @@
 
 int check_palindrome(listint_t **head, listint_t *iterator)
 {
-    int i, j;
+	int i, j;
 
-    if (iterator == NULL)
-        return (1);
-    i = check_palindrome(head, iterator->next);
-    if (i == 0)
-        return (0);
-    j = (iterator->n == (*head)->n);
-    *head = (*head)->next;
-    return (j);
+	if (iterator == NULL)
+		return (1);
+	i = check_palindrome(head, iterator->next);
+	if (i == 0)
+		return (0);
+	j = (iterator->n == (*head)->n);
+	*head = (*head)->next;
+	return (j);
 }
 
 
@@ -30,5 +30,5 @@ int check_palindrome(listint_t **head, listint_t *iterator)
 
 int is_palindrome(listint_t **head)
 {
-    return (check_palindrome(head, *head));
+	return (check_palindrome(head, *head));
 }
