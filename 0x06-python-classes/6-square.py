@@ -48,10 +48,10 @@ class Square:
             or if the its first or second element is not an integer
             or is negative.
         """
-        x, y = value
         if ((not isinstance(value, tuple)) or len(value) != 2 or
-                (not isinstance(x, int)) or (not isinstance(y, int)) or
-                (x < 0) or (y < 0)):
+                (not isinstance(value[0], int)) or
+            (not isinstance(value[1], int)) or
+                (value[0] < 0) or (value[1] < 0)):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
@@ -68,7 +68,7 @@ class Square:
             print()
         else:
             for i in range(self.__position[1]):
-                print("", end="")
+                print()
             for i in range(self.__size):
                 print(" " * self.__position[0], end="")
 
