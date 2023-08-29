@@ -62,7 +62,7 @@ class Square:
         return (self.__size * self.__size)
 
     def my_print(self):
-        """Prints a representation of a square with the character #, 
+        """Prints a representation of a square with the character #,
         at the poistion of the square, and with the size of the square
         """
 
