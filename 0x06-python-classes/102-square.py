@@ -45,14 +45,14 @@ class Square:
     def __eq__(self, square):
         """Returns True if the areas of both squares are equal"""
 
-        if ((not isinstance(square, Square)):
+        if ((not isinstance(square, Square))):
             raise TypeError("argument must be an instance of Square")
         return (self.area() == square.area())
 
     def __ne__(self, square):
         """Returns True if the areas of both squares are not equal"""
 
-        if ((not isinstance(square, Square)):
+        if ((not isinstance(square, Square))):
             raise TypeError("argument must be an instance of Square")
         return (self.area() != square.area())
 
@@ -60,7 +60,7 @@ class Square:
         """Returns True if the area of the first square is
         greater than the area of the second square
         """
-        if ((not isinstance(square, Square)):
+        if ((not isinstance(square, Square))):
             raise TypeError("argument must be an instance of Square")
         return (self.area() > square.area())
 
@@ -68,7 +68,7 @@ class Square:
         """Returns True if the area of the first square is
         less than the area of the second square
         """
-        if ((not isinstance(square, Square)):
+        if ((not isinstance(square, Square))):
             raise TypeError("argument must be an instance of Square")
         return (self.area() < square.area())
 
@@ -76,7 +76,7 @@ class Square:
         """Returns True if the area of the first square is
         greater than or equal to the area of the second square
         """
-        if ((not isinstance(square, Square)):
+        if ((not isinstance(square, Square))):
             raise TypeError("argument must be an instance of Square")
 
         return (self.area() >= square.area())
@@ -85,6 +85,6 @@ class Square:
         """Returns True if the area of the first square is
         less than or equal to the area of the second square
         """
-        if ((not isinstance(square, Square)):
+        if ((not isinstance(square, Square))):
             raise TypeError("argument must be an instance of Square")
         return (self.area() <= square.area())
