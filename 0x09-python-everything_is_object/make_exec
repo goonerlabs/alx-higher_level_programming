@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+#!/bin/bash
+ls -t | head -1 | xargs chmod u+x
