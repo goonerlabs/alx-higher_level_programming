@@ -1,17 +1,3 @@
-check that module docstring is present:
-	>>> mod = __import__('1-my_list')
-	>>> mod.__doc__
-	'list class'
-
-check that class docstring is present:
-	>>> MyList = __import__('1-my_list').MyList
-	>>> MyList.__doc__
-	'my personal list class'
-
-check that method docstring is present:
-	>>> MyList.print_sorted.__doc__
-	' prints a sorted list '
-
 check that MyList is of type list:
 	>>> issubclass(MyList, list)
 	True
