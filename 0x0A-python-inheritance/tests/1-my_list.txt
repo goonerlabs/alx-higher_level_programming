@@ -1,17 +1,16 @@
 check that module docstring is present:
 	>>> mod = __import__('1-my_list')
-	>>> len(mod.__doc__) > 0 and mod.__doc__
-	True
+	>>> mod.__doc__
+	'list class'
 
 check that class docstring is present:
 	>>> MyList = __import__('1-my_list').MyList
-	>>> len(MyList.__doc__) > 0 and MyList.__doc__
-	True
+	>>> MyList.__doc__
+	'my personal list class'
 
 check that method docstring is present:
-	>>> MyList.append = __import__('1-my_list').MyList.print_sorted
-	>>> len(MyList.print_sorted.__doc__) > 0 and MyList.append.__doc__
-	True
+	>>> MyList.print_sorted.__doc__
+	' prints a sorted list '
 
 check that MyList is of type list:
 	>>> issubclass(MyList, list)
@@ -41,10 +40,10 @@ check that negative numbers are properly placed:
 	>>> my_list.append(-2)
 	>>> my_list.append(-3)
 	>>> my_list.print_sorted()
-	[-3, -2, -1, 0, 1, 2, 3, 8, 9]	
+	[-3, -2, -1, 0, 1, 2, 3, 8, 9]
 
 check for too many args:
 	>>> my_list.print_sorted(1, 2, 3)
 	Traceback (most recent call last):
 		...
-	TypeError: print_sorted() takes 1 positional argument but 4 were given
+	TypeError: MyList.print_sorted() takes 1 positional argument but 4 were given
