@@ -4,8 +4,8 @@
 
 def read_file(filename=""):
     """reads a file and prints the contents to stdout
-    ARGS:
-    filename: (str) the name of the file to read
+    Args:
+        filename: (str) the name of the file to read
     """
 
     with open(filename) as f:
