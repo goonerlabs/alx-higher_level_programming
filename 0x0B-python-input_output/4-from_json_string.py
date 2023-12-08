@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """utility function to deserialize a json string"""
 import json
 
